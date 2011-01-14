@@ -1,6 +1,6 @@
 include $(GOROOT)/src/Make.inc
 
-TARG=doozer/assert
+TARG=assert
 GOFILES=\
 	assert.go\
 
