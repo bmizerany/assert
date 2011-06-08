@@ -1,6 +1,6 @@
 include $(GOROOT)/src/Make.inc
 
-TARG=assert
+TARG=github.com/bmizerany/assert
 GOFILES=\
 	assert.go\
 
