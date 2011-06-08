@@ -20,8 +20,9 @@ func assert(t *testing.T, result bool, f func(), cd int) {
 
 func equal(t *testing.T, exp, got interface{}, cd int, args ...interface{}) {
 	fn := func() {
-		t.Errorf("!  Expected: %T %# v", exp, pretty.Formatter(exp))
-		t.Errorf("!  Got:      %T %# v", got, pretty.Formatter(got))
+		for _, desc := range pretty.Diff(exp, got) {
+			t.Error("!", desc)
+		}
 		if len(args) > 0 {
 			t.Error("!", " -", fmt.Sprint(args...))
 		}
