@@ -2,7 +2,7 @@ package assert
 // Testing helpers for doozer.
 
 import (
-	"github.com/kr/pretty.go"
+	"github.com/kr/pretty"
 	"reflect"
 	"testing"
 	"runtime"
