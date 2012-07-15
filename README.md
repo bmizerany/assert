@@ -34,13 +34,11 @@
     }
 
 **output**
-
-    --- FAIL: point.TestAsserts
-            /Users/blake/code/assert/example/point_test.go:12
-            !  Expected: point.Point point.Point{x:1, y:1}
-            !  Got:      point.Point point.Point{x:2, y:1}
-    FAIL
-
+    $ go test
+     --- FAIL: TestAsserts (0.00 seconds)
+	 assert.go:15: /Users/flavio.barbosa/dev/stewie/src/point_test.go:12
+         assert.go:24: ! X: 1 != 2
+	 FAIL
 
 ## Docs
 
