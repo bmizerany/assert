@@ -4,7 +4,7 @@
 
 ## Install
 
-    $ goinstall github.com/bmizerany/assert
+    $ go get github.com/bmizerany/assert
 
 ## Use
 
